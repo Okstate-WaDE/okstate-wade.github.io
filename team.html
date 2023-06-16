@@ -1,0 +1,27 @@
+---
+title: The WaDE team
+---
+
+<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong> Manage Staff members</a></p>
+<ul class="staff">
+	{% for person in site.staff_members %}
+	{% if person.position != 'Undergraduate Research Assistant' %}
+		<li>
+			<div class="square-image"><img src="{{ site.baseurl }}/{{person.image_path}}" alt="{{ person.name }}"/></div>
+			<div class="name">{{ person.name }}</div>
+			<div class="position">{{ person.position }}</div>
+			<div class="blurb">{{ person.blurb }}</div>
+		</li>
+	{% endif %}
+	{% endfor %}
+	{% for person in site.staff_members %}
+	{% if person.position == 'Undergraduate Research Assistant' %}
+		<li>
+			<div class="square-image"><img src="{{ site.baseurl }}/{{person.image_path}}" alt="{{ person.name }}"/></div>
+			<div class="name">{{ person.name }}</div>
+			<div class="position">{{ person.position }}</div>
+			<div class="blurb">{{ person.blurb }}</div>
+		</li>
+	{% endif %}
+	{% endfor %}
+</ul>
