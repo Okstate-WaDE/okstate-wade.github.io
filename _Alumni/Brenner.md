@@ -1,7 +1,7 @@
 ---
-name:
+name:Hunter Brenner
 position:
 image_path:
 twitter:
-blurb:
+blurb:Brenner is researching using deep learning to improve flood forecasts in Oklahoma
 ---
