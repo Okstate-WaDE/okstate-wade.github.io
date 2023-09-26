@@ -6,7 +6,7 @@ title: The WaDE team
 <ul class="staff">
 	{% for person in site.staff_members %}
 		<li>
-			<div class="square-image"><img src="{{ site.baseurl }}/{{person.image_path}}" alt="{{ person.name }}"/></div>
+			<div class="square-image"><img src="{{ site.baseurl }}/{{person.image_path}}" alt="{{ person.name }}" style="object-fit: contain;"/></div>
 			<div class="name">{{ person.name }}</div>
 			<div class="position">{{ person.position }}</div>
 			<div class="blurb">{{ person.blurb }}</div>
@@ -24,7 +24,7 @@ title: Alumni
 	{% for person in site._Alumni %}
 	
 		<li>
-			<div class="square-image"><img src="{{ site.baseurl }}/{{person.image_path}}" alt="{{ person.name }}"/></div>
+			<div class="square-image"><img src="{{ site.baseurl }}/{{person.image_path}}" alt="{{ person.name }}" style="object-fit: contain;"/></div>
 			<div class="name">{{ person.name }}</div>
 			<div class="position">{{ person.position }}</div>
 			<div class="blurb">{{ person.blurb }}</div>
