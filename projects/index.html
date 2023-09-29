@@ -1,4 +1,20 @@
 ---
-title: Projects
+title: WaDE Team Projects
 ---
+<br>
+<p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong> Manage Staff members</a></p>
+<ul class="staff2">
+	
+	{% for person in site.staff_members %}
+	{% if person.position == 'Project' %}
+		<li>
+			<div class="square-image2"><img src="{{ site.baseurl }}/{{person.image_path}}" alt="{{ person.name }}"/></div>
+			<div class="name2">{{ person.name }}</div>
+			<div class="position2">{{ person.position }}</div>
+			<div class="blurb">{{ person.blurb }}</div>
+		</li>
+	{% endif %}
+	{% endfor %}
+	</ul>
+
 

@@ -50,7 +50,7 @@ defaults:
       _options:
         image_path:
           width: 600
-          height: 600
+          height: 600      
   - scope:
       path: ""
     values:
