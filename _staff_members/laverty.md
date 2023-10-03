@@ -2,5 +2,5 @@
 name: Randi Laverty
 position: Alumni
 image_path: images/pete.png
-blurb: Randi is is our Alumni
+blurb: Randi worked on using deep learning to improve streamflow forecasts.
 ---

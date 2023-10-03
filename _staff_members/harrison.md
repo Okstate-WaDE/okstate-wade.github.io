@@ -2,5 +2,5 @@
 name: Harrison Frazier
 position: Undergraduate Research Assistant
 image_path: images/harrison.png
-blurb: Harrison Frazier is working on an developing an online class on fundamental water resource concepts relevant to Oklahomans
+blurb: Harrison is working on improving a 4-H soil moisture sensor activity. 
 ---

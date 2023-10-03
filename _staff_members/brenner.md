@@ -2,5 +2,5 @@
 name: Hunter Brenner
 position: Alumni
 image_path: images/pete.png
-blurb: Brenner is our Alumni
+blurb: Hunter worked on using a low-cost circuit board (Microbit) for measuring water salinity
 ---
