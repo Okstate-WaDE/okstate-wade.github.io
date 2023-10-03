@@ -9,7 +9,9 @@ GEM
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     eventmachine (1.2.7)
+    eventmachine (1.2.7-x86-mingw32)
     ffi (1.15.1)
+    ffi (1.15.1-x86-mingw32)
     forwardable-extended (2.6.0)
     http_parser.rb (0.6.0)
     i18n (1.8.10)
@@ -64,10 +66,16 @@ GEM
       ffi (~> 1.9)
     terminal-table (2.0.0)
       unicode-display_width (~> 1.1, >= 1.1.1)
+    tzinfo (2.0.6)
+      concurrent-ruby (~> 1.0)
+    tzinfo-data (1.2023.3)
+      tzinfo (>= 1.0.0)
     unicode-display_width (1.7.0)
+    webrick (1.8.1)
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   jekyll (~> 4.2.0)
@@ -76,6 +84,9 @@ DEPENDENCIES
   jekyll-paginate (~> 1.1.0)
   jekyll-seo-tag (~> 2.7.1)
   jekyll-sitemap (~> 1.4.0)
+  tzinfo
+  tzinfo-data
+  webrick
 
 BUNDLED WITH
    1.17.3

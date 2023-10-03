@@ -1,11 +1,15 @@
 ---
 title: The WaDE team
 ---
-
+<div>
+	<h2>Current Team</h2>
+</div>
+<br>
 <p class="editor-link" style="text-align: center;"><a href="cloudcannon:collections/_staff_members/" class="btn"><strong>&#9998;</strong> Manage Staff members</a></p>
 <ul class="staff">
+	
 	{% for person in site.staff_members %}
-	{% if person.position != 'Undergraduate Research Assistant' %}
+	{% if person.position == 'WaDE Lab Head' %}
 		<li>
 			<div class="square-image"><img src="{{ site.baseurl }}/{{person.image_path}}" alt="{{ person.name }}"/></div>
 			<div class="name">{{ person.name }}</div>
@@ -24,4 +28,31 @@ title: The WaDE team
 		</li>
 	{% endif %}
 	{% endfor %}
+	{% for person in site.staff_members %}
+	{% if person.position == 'Graduate Research Assistant' %}
+		<li>
+			<div class="square-image"><img src="{{ site.baseurl }}/{{person.image_path}}" alt="{{ person.name }}" style="object-fit: contain;"/></div>
+			<div class="name">{{ person.name }}</div>
+			<div class="position">{{ person.position }}</div>
+			<div class="blurb">{{ person.blurb }}</div>
+		</li>
+	{% endif %}
+	{% endfor %}
+	</ul>
+	<div>
+		<h2>Alumni</h2>
+	</div>
+	<ul class="staff">
+	{% for person in site.staff_members %}
+	{% if person.position == 'Alumni' %}
+		<li>
+		
+			<div class="square-image"><img src="{{ site.baseurl }}/{{person.image_path}}" alt="{{ person.name }}"/></div>
+			<div class="name">{{ person.name }}</div>
+			<div class="position">{{ person.position }}</div>
+			<div class="blurb">{{ person.blurb }}</div>
+		</li>
+	{% endif %}
+	{% endfor %}
 </ul>
+
