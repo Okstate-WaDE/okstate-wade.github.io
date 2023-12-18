@@ -18,20 +18,22 @@ title: The WaDE team
 		</li>
 	{% endif %}
 	{% endfor %}
+
 	{% for person in site.staff_members %}
-	{% if person.position == 'Undergraduate Research Assistant' %}
+	{% if person.position == 'Graduate Research Assistant' %}
 		<li>
-			<div class="square-image"><img src="{{ site.baseurl }}/{{person.image_path}}" alt="{{ person.name }}"/></div>
+			<div class="square-image"><img src="{{ site.baseurl }}/{{person.image_path}}" alt="{{ person.name }}" style="object-fit: contain;"/></div>
 			<div class="name">{{ person.name }}</div>
 			<div class="position">{{ person.position }}</div>
 			<div class="blurb">{{ person.blurb }}</div>
 		</li>
 	{% endif %}
 	{% endfor %}
+	
 	{% for person in site.staff_members %}
-	{% if person.position == 'Graduate Research Assistant' %}
+	{% if person.position == 'Undergraduate Research Assistant' %}
 		<li>
-			<div class="square-image"><img src="{{ site.baseurl }}/{{person.image_path}}" alt="{{ person.name }}" style="object-fit: contain;"/></div>
+			<div class="square-image"><img src="{{ site.baseurl }}/{{person.image_path}}" alt="{{ person.name }}"/></div>
 			<div class="name">{{ person.name }}</div>
 			<div class="position">{{ person.position }}</div>
 			<div class="blurb">{{ person.blurb }}</div>
