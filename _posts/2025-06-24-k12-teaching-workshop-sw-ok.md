@@ -110,6 +110,7 @@ File Num | Description | Link
 ![storage elevation clean]({{ site.baseurl }}/assets/images/blog/250624_k12_wkshp/storage_elevation.png)
 ![storage elevation colored by year]({{ site.baseurl }}/assets/images/blog/250624_k12_wkshp/storage_elevation_color.png)
 ## Rainfall - Inflow Model (scatter plot)
+![predicting inflow with rainfall]({{ site.baseurl }}/assets/images/blog/250624_k12_wkshp/rainfall_inflow_model.png)
 
 
 
