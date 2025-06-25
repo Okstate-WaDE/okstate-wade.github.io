@@ -27,12 +27,60 @@
 			}
 		}
 
-	.name {
+	.name2 {
 		font-size: 1.3em;
 		margin-top: 20px;
 	}
 
-	.position {
+	.position2 {
 		color: #666;
+	}
+}
+
+.staff2 {
+	padding: 0;
+	list-style: none;
+	@extend %flexbox;
+	@include flex-flow(wrap);
+	text-align: left;
+
+	li {
+		padding: 30px 20px;
+		box-sizing: border-box;
+		width: 100%;      // Full width of its container.
+		height: 250px;    // Set height of each profile to 250px.
+		border-radius: 15px; // Curved edges
+		box-shadow: 0 16px 32px rgba(9, 10, 9, 0.1);
+		margin-bottom: 20px;
+		transition: transform 0.3s ease;
+		&:hover { // Hover effect
+			transform: scale(1.05);}
+		@media #{$tablet} {
+			@include flex(1, 1, 100%); // Adjusts to ensure full width on tablet
+		}
+
+		@media #{$desktop} {
+			@include flex(1, 1, 100%); // Adjusts to ensure full width on desktop
+		}
+	}
+
+	.square-image2 {
+		margin: 20px;
+		float: left;
+		width: 200px;       // Adjust width to auto to fit the content.
+		height: 200px;      // Adjust height to auto to fit within the 250px profile constraint.
+		img {
+			max-height: 100%;    // Ensure the image does not exceed its container height.
+			width: auto;         // Maintain the aspect ratio.
+		}
+	}
+
+	.name2 {
+		font-size: 1.3em;
+		margin-top: 20px;
+	}
+
+	.position2 {
+		color: #fffbfb;
 	}
 }
