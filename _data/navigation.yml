@@ -2,10 +2,10 @@
   #link: /about/
   #new_window: false
   #highlight: false
-- name: Projects
-  link: /projects/
-  new_window: false
-  highlight: false
+#- name: Projects
+  #link: /projects/
+  #new_window: false
+  #highlight: false
 - name: Team
   link: /team/
   new_window: false
