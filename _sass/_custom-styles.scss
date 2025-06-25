@@ -1,0 +1,18 @@
+/* In _sass/_custom-styles.scss */
+
+table {
+width: 100%; /* Make table span full width */
+border-collapse: collapse; /* Collapse borders for a single line */
+margin-bottom: 1.5em; /* Add some space below the table */
+}
+
+th, td {
+border: 1px solid #ccc; /* Add a 1px solid light gray border to headers and data cells */
+padding: 0.8em; /* Add padding inside cells for readability */
+text-align: left; /* Ensure text is left-aligned by default */
+}
+
+th {
+background-color: #f2f2f2; /* Light background for headers */
+font-weight: bold; /* Make header text bold */
+}
